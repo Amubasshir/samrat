@@ -9,7 +9,7 @@ export default function Contact() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/contact-bg.jpg')" }}
         ></div>
-        <div className="absolute inset-0 bg-black/90"></div>
+        <div className="absolute inset-0 bg-black/85"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
