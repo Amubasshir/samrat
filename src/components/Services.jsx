@@ -1,56 +1,56 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, FileText, Gavel, Landmark, Scale, Shield } from "lucide-react";
+import { BadgePercent, Clock, FileText, Users } from "lucide-react";
 
 const services = [
   {
-    icon: <Scale className="w-10 h-10 text-gold" />,
-    title: "Family Law",
-    description: "Compassionate guidance for divorce, custody, and family matters."
+    icon: <Users className="w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-dark" />,
+    title: "Professional Lawyers",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ac imperdiet tellus"
   },
   {
-    icon: <Shield className="w-10 h-10 text-gold" />,
-    title: "Criminal Defense",
-    description: "Aggressive protection of your rights in criminal proceedings."
+    icon: <FileText className="w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-dark" />,
+    title: "Document Reviewing",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ac imperdiet tellus"
   },
   {
-    icon: <Briefcase className="w-10 h-10 text-gold" />,
-    title: "Business Law",
-    description: "Strategic counsel for business formation, contracts, and disputes."
+    icon: <Clock className="w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-dark" />,
+    title: "24/7 Support",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ac imperdiet tellus"
   },
   {
-    icon: <FileText className="w-10 h-10 text-gold" />,
-    title: "Estate Planning",
-    description: "Securing your legacy with wills, trusts, and estate administration."
-  },
-  {
-    icon: <Landmark className="w-10 h-10 text-gold" />,
-    title: "Real Estate",
-    description: "Expert handling of residential and commercial property transactions."
-  },
-  {
-    icon: <Gavel className="w-10 h-10 text-gold" />,
-    title: "Civil Litigation",
-    description: "Skilled representation in complex civil disputes and lawsuits."
+    icon: <BadgePercent className="w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-dark" />,
+    title: "Discounted Rate",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ac imperdiet tellus"
   }
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-black relative">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-24 relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/services-bg.jpg')",
+          backgroundPosition: "center 30%"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/80"></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-gold uppercase tracking-widest text-sm font-semibold mb-4 block">Areas of Practice</span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-            How Can We <span className="text-gold">Help You</span>
+          <span className="text-gold uppercase tracking-[0.2em] text-sm font-semibold mb-4 block">
+            Why Choose Us?
+          </span>
+          <h2 className="text-4xl md:text-6xl font-serif text-white mb-6">
+            Let Our Experience Guide You
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Providing comprehensive legal services across a wide range of practice areas to meet your personal and business needs.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -58,15 +58,17 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-gray-dark p-10 border border-gray-800 hover:border-gold transition-all duration-300 hover:-translate-y-2"
+              className="group border border-gold/50 p-8 text-center hover:scale-105 transition-transform duration-300 bg-black/20 backdrop-blur-sm"
             >
-              <div className="mb-6 bg-black/50 w-20 h-20 rounded-full flex items-center justify-center group-hover:bg-gold/10 transition-colors">
-                {service.icon}
+              <div className="mb-6 flex justify-center">
+                <div className="p-4 rounded-full border border-gold/30 group-hover:border-gold-dark/50 transition-colors duration-300">
+                  {service.icon}
+                </div>
               </div>
-              <h3 className="text-2xl font-serif font-bold text-white mb-4 group-hover:text-gold transition-colors">
+              <h3 className="text-xl font-serif text-white mb-4">
                 {service.title}
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {service.description}
               </p>
             </motion.div>
