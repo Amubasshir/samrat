@@ -57,8 +57,8 @@ export default function Contact() {
                   className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-4 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-[#C5A059] transition-colors"
                 />
                 <select className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-4 text-gray-300 focus:outline-none focus:border-[#C5A059] transition-colors appearance-none">
-                  <option className="bg-gray-900">Family Law</option>
-                  <option className="bg-gray-900">Criminal Defense</option>
+                  <option className="bg-gray-900">Income Tax</option>
+                  <option className="bg-gray-900">Vat</option>
                   <option className="bg-gray-900">Business Law</option>
                 </select>
               </div>
