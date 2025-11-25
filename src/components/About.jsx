@@ -6,17 +6,17 @@ import { Award, BookOpen, Users } from 'lucide-react';
 export default function About() {
   const stats = [
     {
-      icon: <Award className="w-8 h-8 text-gold" />,
+      icon: './certificate.png',
       label: 'Years Experience',
       value: '20+',
     },
     {
-      icon: <BookOpen className="w-8 h-8 text-gold" />,
+      icon: './book.png',
       label: 'Cases Won',
       value: '850+',
     },
     {
-      icon: <Users className="w-8 h-8 text-gold" />,
+      icon: './client-care.png',
       label: 'Happy Clients',
       value: '1200+',
     },
@@ -86,7 +86,9 @@ export default function About() {
                   key={index}
                   className="bg-black/50 p-6 border border-gray-800 hover:border-gold/50 transition-colors rounded-sm"
                 >
-                  <div className="mb-4">{stat.icon}</div>
+                  <div className="mb-4">
+                    <img src={stat.icon} alt="" className="w-16 h-16" />
+                  </div>
                   <h3 className="text-3xl font-bold text-white mb-1">
                     {stat.value}
                   </h3>

@@ -73,7 +73,10 @@ const Services = () => {
   ];
 
   return (
-    <section id='services' className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section
+      id="services"
+      className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <img
@@ -123,4 +126,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Services;
