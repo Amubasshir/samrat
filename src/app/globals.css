@@ -30,3 +30,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-playfair), serif;
 }
+
+
+.bgTest{
+  background: repeating-linear-gradient(45deg, #000 0px, #111 2px, #000 4px, #222 6px);
+}
