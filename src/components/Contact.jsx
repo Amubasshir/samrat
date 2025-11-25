@@ -157,7 +157,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={submissionStatus === 'loading'}
-                className="bg-[#C5A059] text-white font-medium px-10 py-4 rounded-sm hover:bg-[#b08d4b] transition-colors uppercase tracking-wide text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-[#d4af37] text-white font-medium px-10 py-4 rounded-sm hover:bg-gold-light transition-colors uppercase tracking-wide text-sm disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {submissionStatus === 'loading' ? 'Sending...' : 'Appointment'}
               </button>

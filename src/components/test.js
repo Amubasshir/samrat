@@ -74,7 +74,7 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-gray-300 hover:text-gold transition-all text-lg transform hover:translate-x-2"
+                  className="text-gray-300 hover:text-gold transition-colors text-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}

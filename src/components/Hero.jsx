@@ -39,7 +39,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center gap-4 mb-2 md:mb-6">
             <div className="h-[2px] w-12 bg-gold"></div>
             <span className="text-gold uppercase tracking-widest text-sm font-semibold">
               Attorney at Law
@@ -51,17 +51,17 @@ export default function Hero() {
             Strong Legal <span className="text-gold">Protection.</span>
           </h1>
 
-          <p className="text-gray-400 text-lg mb-10 max-w-lg leading-relaxed">
+          <p className="text-gray-400 text-lg mb-5 md:mb-10  max-w-lg leading-relaxed">
             With over 20 years of experience, we provide expert legal
             representation and strategic advice to protect your rights and
             future.
           </p>
 
-          <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-4 bg-gold text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm">
+          <div className="flex flex-wrap gap-4 pb-2">
+            <button className="px-7 py-4 bg-gold text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm">
               Contact Us
             </button>
-            <button className="px-8 py-4 border border-gray-600 text-white font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors rounded-sm">
+            <button className="px-[33px] py-4 border border-gray-600 text-white font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors rounded-sm">
               Read More
             </button>
           </div>

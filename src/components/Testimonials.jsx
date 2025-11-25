@@ -34,15 +34,20 @@ export default function Testimonials() {
   };
 
   const prev = () => {
-    setCurrentIndex(prev => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      prev => (prev - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   // Define ACCENT_COLOR using the hex code
-  const ACCENT_COLOR_HEX = '#CEAA36';
+  const ACCENT_COLOR_HEX = '#d4af37';
   const ACCENT_TEXT_COLOR = '#CEAA36'; // Tailwind style using the hex color directly
 
   return (
-    <section id="testimonials" className="relative py-32 bgTest overflow-hidden">
+    <section
+      id="testimonials"
+      className="relative py-32 bgTest overflow-hidden"
+    >
       <div className="container mx-auto px-6 text-center relative z-20">
         {/* Header */}
         <span
@@ -92,18 +97,18 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote Text */}
-                <p className="text-3xl md:text-4xl text-gray-200 font-serif italic mb-10 leading-snug">
-                  "{testimonials[currentIndex].text}"
+                <p className="text-sm sm:text-xl md:text-2xl lg:text-4xl text-gray-200 font-serif italic mb-6 sm:mb-8 md:mb-10 leading-snug sm:leading-normal md:leading-snug">
+                  {testimonials[currentIndex].text}
                 </p>
 
                 {/* Author Info */}
-                <div className="mt-8 pt-6 border-t-2 border-amber-500/50 max-w-sm mx-auto">
-                  <h4 className="text-white font-extrabold text-xl tracking-wider">
+                <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t-2 border-amber-500/50 max-w-xs sm:max-w-sm mx-auto text-center">
+                  <h4 className="text-white font-extrabold text-lg sm:text-xl tracking-wider">
                     {testimonials[currentIndex].author}
                   </h4>
                   <p
-                    className="text-[ACCENT_TEXT_COLOR] text-sm uppercase tracking-widest mt-1"
-                    style={{ color: ACCENT_TEXT_COLOR }} // Applied HEX color here
+                    className="text-sm sm:text-base uppercase tracking-widest mt-1"
+                    style={{ color: ACCENT_TEXT_COLOR }}
                   >
                     {testimonials[currentIndex].role}
                   </p>
@@ -117,7 +122,7 @@ export default function Testimonials() {
             {/* Previous Button */}
             <motion.button
               onClick={prev}
-              className="p-3 bg-gray-800 hover:bg-amber-500 hover:text-gray-900 transition-colors duration-300 rounded-full shadow-lg border border-gray-700/50 pointer-events-auto opacity-80 hover:opacity-100 z-40"
+              className="p-2 bg-gray-800 hover:bg-amber-500 hover:text-gray-900 transition-colors duration-300 rounded-full shadow-lg border border-gray-700/50 pointer-events-auto opacity-80 hover:opacity-100 z-40"
               style={{ color: ACCENT_COLOR_HEX }}
               whileHover={{ scale: 1.1, x: -5 }}
               transition={{ type: 'spring', stiffness: 400 }}
@@ -129,7 +134,7 @@ export default function Testimonials() {
             {/* Next Button */}
             <motion.button
               onClick={next}
-              className="p-3 bg-gray-800 hover:bg-amber-500 hover:text-gray-900 transition-colors duration-300 rounded-full shadow-lg border border-gray-700/50 pointer-events-auto opacity-80 hover:opacity-100 z-40"
+              className="p-2 bg-gray-800 hover:bg-amber-500 hover:text-gray-900 transition-colors duration-300 rounded-full shadow-lg border border-gray-700/50 pointer-events-auto opacity-80 hover:opacity-100 z-40"
               style={{ color: ACCENT_COLOR_HEX }}
               whileHover={{ scale: 1.1, x: 5 }}
               transition={{ type: 'spring', stiffness: 400 }}
@@ -151,7 +156,8 @@ export default function Testimonials() {
                     : 'bg-gray-700 hover:bg-gray-500'
                 }`}
                 style={{
-                  backgroundColor: index === currentIndex ? ACCENT_COLOR_HEX : undefined,
+                  backgroundColor:
+                    index === currentIndex ? ACCENT_COLOR_HEX : undefined,
                 }}
               />
             ))}
