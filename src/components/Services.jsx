@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import { motion } from 'framer-motion';
 
 // --- 1. ServiceCard Sub-Component ---
@@ -16,8 +15,8 @@ const ServiceCard = ({ iconUrl, title, description }) => {
         duration: 0.1,
       }}
       // Tailwind CSS styling: REMOVED the 'transition-all duration-300' classes
-      className="flex flex-col items-center text-center p-6 sm:p-8 bg-black/40 border 
-                 border-amber-500/50 
+      className="flex flex-col items-center text-center p-6 sm:p-8 bg-black/40 border
+                 border-amber-500/50
                  cursor-pointer relative z-10"
     >
       {/* Icon: Now using an <img> tag */}
@@ -42,33 +41,39 @@ const ServiceCard = ({ iconUrl, title, description }) => {
 
 // --- 2. Main Services Component ---
 const Services = () => {
-  const descriptionText =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit ac imperdiet tellus.';
+  const descriptionService =
+    'Expert legal support for income tax, VAT, and company compliance matters with accuracy.';
+  const descriptionReview =
+    'Accurate review and preparation of tax files, returns, company papers, and audits.';
+  const descriptionSupport =
+    'Reliable tax guidance and consultation available whenever you need professional help.';
+  const descriptionRate =
+    'Affordable tax solutions with transparent fees for individuals, startups, and businesses.';
 
   const services = [
     {
       iconUrl:
         'https://thompson.redpixelthemes.com/assets/img/icons/icon-professional-hover.svg',
-      title: 'Professional Lawyers',
-      description: descriptionText,
+      title: 'Professional Services',
+      description: descriptionService,
     },
     {
       iconUrl:
         'https://thompson.redpixelthemes.com/assets/img/icons/icon-reviewing-hover.svg',
       title: 'Document Reviewing',
-      description: descriptionText,
+      description: descriptionReview,
     },
     {
       iconUrl:
         'https://thompson.redpixelthemes.com/assets/img/icons/icon-support-hover.svg',
       title: '24/7 Support',
-      description: descriptionText,
+      description: descriptionSupport,
     },
     {
       iconUrl:
         'https://thompson.redpixelthemes.com/assets/img/icons/icon-rate-hover.svg',
       title: 'Discounted Rate',
-      description: descriptionText,
+      description: descriptionRate,
     },
   ];
 
