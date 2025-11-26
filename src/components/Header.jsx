@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -34,11 +35,22 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link
-          href="/"
-          className="hidden md:inline-block text-2xl font-serif font-bold text-gold"
-        >
-          Nazmul Samrat
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-3">
+          {/* Mobile: logo image */}
+          <Image
+            src="/images/logo.png"
+            alt="Nazmul Samrat logo"
+            width={40}
+            height={40}
+            className="h-10 w-auto"
+            priority
+          />
+
+          {/* Desktop: text title */}
+          <span className="hidden md:inline-block text-2xl font-serif font-bold text-gold">
+            Nazmul Samrat
+          </span>
         </Link>
 
         {/* Desktop Nav */}
