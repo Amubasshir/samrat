@@ -107,13 +107,13 @@ const Services = () => {
         {/* Header Text Section */}
         <div className="text-center mb-16">
           <p className="font-semi-bold font-body text-sm uppercase tracking-widest text-primary md:text-lg text-[#CEAA36] ">
-            WHY CHOOSE US?
+            WHY CHOOSE ME?
           </p>
           <h2
             className="pt-2 font-header text-2xl text-white sm:text-3xl md:text-4xl xl:pt-5 xl:text-5xl"
             style={{ fontFamily: 'Georgia, serif' }}
           >
-            Let Our Experience Guide You
+            Let MY Experience Guide You
           </h2>
         </div>
 
