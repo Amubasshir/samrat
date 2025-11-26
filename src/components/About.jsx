@@ -1,24 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function About() {
   const stats = [
     {
       icon: './certificate.png',
       label: 'Years Experience',
-      value: 20,
+      value: 5,
     },
     {
       icon: './book.png',
       label: 'Cases Won',
-      value: 850,
+      value: 50,
     },
     {
       icon: './client-care.png',
       label: 'Happy Clients',
-      value: 1200,
+      value: 100,
     },
   ];
 
@@ -69,20 +69,24 @@ export default function About() {
               About Our Practice
             </span>
 
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8">
-              Committed to Excellence in{' '}
-              <span className="text-gold">Legal Representation</span>
+            <h2 className="text-5xl font-serif font-bold text-white mb-6">
+              Committed to Excellence in <br />
+              <span className="text-gold block mt-2">
+                Tax and Legal Advisory
+              </span>
             </h2>
 
             <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-              We understand that legal matters can be complex and stressful. Our
-              mission is to provide clear, strategic, and effective legal
-              solutions tailored to your unique situation.
+              We understand that tax and compliance matters can be complicated,
+              time-sensitive, and stressful. Our goal is to provide accurate,
+              strategic, and reliable legal solutions customized to your
+              financial and business needs.
             </p>
 
             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-              With a focus on integrity and results, we have built a reputation
-              for excellence in the courtroom and at the negotiating table.
+              With a focus on transparency, precision, and proven results, we
+              have built trust by helping clients navigate income tax, VAT,
+              company registration, audits, and legal documentation effectively.
             </p>
 
             {/* ==== CARDS + ANIMATION ==== */}
