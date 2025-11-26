@@ -13,7 +13,20 @@ const playfair = Playfair_Display({
 
 export const metadata = {
   title: 'Nazmul Samrat | Premium Tax Services',
-  description: 'Committed to Excellence in Legal Representation',
+  description:
+    'Expert Income Tax Lawyer offering tax filing, VAT services, NBR compliance, company registration, legal advisory, audit support & tax consultancy in Bangladesh.',
+  keywords: [
+    'Income Tax Lawyer Bangladesh',
+    'VAT Lawyer Bangladesh',
+    'NBR Tax Consultant',
+    'Company Registration Services',
+    'Tax Filing Bangladesh',
+    'Corporate Tax Bangladesh',
+    'Legal Tax Advisor Dhaka',
+    'Tax Consultancy Bangladesh',
+    'Tax Return Filing Bangladesh',
+    'Tax Audit Support Bangladesh',
+  ],
 };
 
 export default function RootLayout({ children }) {
