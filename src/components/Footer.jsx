@@ -1,6 +1,6 @@
 'use client';
 
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Linkedin, Mail, Phone, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -37,12 +37,6 @@ export default function Footer() {
                 className="text-gray-500 hover:text-gold transition-colors"
               >
                 <Linkedin size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-gold transition-colors"
-              >
-                <Instagram size={20} />
               </a>
             </div>
           </div>
@@ -94,12 +88,12 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-500">
               <li>
                 <a href="#" className="hover:text-gold transition-colors">
-                  Family Law
+                  Income Tax
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-gold transition-colors">
-                  Criminal Defense
+                  Vat Assistance
                 </a>
               </li>
               <li>
@@ -119,12 +113,42 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">
               Contact Info
             </h4>
-            <ul className="space-y-3 text-sm text-gray-500">
-              <li>123 Legal Avenue, Suite 100</li>
-              <li>New York, NY 10001</li>
-              <li>+1 (555) 123-4567</li>
-              <li>contact@attorneylaw.com</li>
-            </ul>
+            <div className="grid grid-cols-1 gap-4 text-sm text-gray-500">
+              <div>
+                <p className="text-gold font-semibold">Dhaka Chamber :</p>
+                <p>Ivory Krishnachura (4th floor)</p>
+                <p>3/1-E Purana Paltan, Dhaka-1000</p>
+              </div>
+
+              <div>
+                <p className="text-gold font-semibold">Jamalpur Chamber :</p>
+                <p>432, Mahmudpur Road, Melandah, Jamalpur</p>
+              </div>
+
+              <div className="flex flex-col gap-2 pt-2">
+                <a
+                  href="tel:01912871143"
+                  className="flex items-center gap-2 hover:text-gold"
+                >
+                  <Phone size={16} />
+                  <span>01912-871143</span>
+                </a>
+                <a
+                  href="tel:01715317883"
+                  className="flex items-center gap-2 hover:text-gold"
+                >
+                  <Phone size={16} />
+                  <span>01715-317883</span>
+                </a>
+                <a
+                  href="mailto:n.tax.bd@gmail.com"
+                  className="flex items-center gap-2 hover:text-gold"
+                >
+                  <Mail size={16} />
+                  <span>n.tax.bd@gmail.com</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
