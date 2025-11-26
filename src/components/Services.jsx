@@ -20,7 +20,7 @@ const ServiceCard = ({ iconUrl, title, description }) => {
                  cursor-pointer relative z-10"
     >
       {/* Icon: Now using an <img> tag */}
-      <div className="mb-4">
+      <div className="mb-3">
         <img
           src={iconUrl}
           alt={title + ' icon'}
@@ -29,10 +29,12 @@ const ServiceCard = ({ iconUrl, title, description }) => {
       </div>
 
       {/* Title */}
-      <h3 className="pt-8 font-header text-lg text-white md:pt-10">{title}</h3>
+      <h3 className="pt-5 font-header text-2xl md:text-lg text-white md:pt-6">
+        {title}
+      </h3>
 
       {/* Description */}
-      <p className="pt-4 pb-3 font-body text-sm font-light leading-loose text-white md:pt-6 md:pb-6">
+      <p className="pt-6 pb-3 font-body text-sm font-light leading-loose text-white md:py-8">
         {description}
       </p>
     </motion.div>
