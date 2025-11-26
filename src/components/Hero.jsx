@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-black overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center bg-black overflow-hidden pt-0 md:pt-20"
     >
       {/* Background Texture & Subtle Elements */}
       {/* Striped Dark Background (decorative) */}
@@ -39,7 +39,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex items-center gap-4 mb-2 md:mb-6">
+          <div className="flex items-center gap-4 mb-2 md:mb-6 md:hidden">
             <div className="h-[2px] w-12 bg-gold"></div>
             <span className="text-gold uppercase tracking-widest text-sm font-semibold">
               Nazmul Samrat
