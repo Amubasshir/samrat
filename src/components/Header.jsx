@@ -35,12 +35,12 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="text-2xl font-serif font-bold text-gold">
-          Attorney at Law
+          Nazmul Samrat
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
@@ -70,7 +70,7 @@ export default function Header() {
             className="absolute top-full left-0 right-0 bg-black/90 border-t border-gray-800 md:hidden"
           >
             <nav className="flex flex-col p-6 space-y-4">
-              {navLinks.map(link => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}

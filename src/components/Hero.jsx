@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="flex items-center gap-4 mb-2 md:mb-6">
             <div className="h-[2px] w-12 bg-gold"></div>
             <span className="text-gold uppercase tracking-widest text-sm font-semibold">
-              Attorney at Law
+              Nazmul Samrat
             </span>
           </div>
 

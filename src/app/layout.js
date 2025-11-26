@@ -1,19 +1,19 @@
-import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
+import { Inter, Playfair_Display } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+  variable: '--font-inter',
+  subsets: ['latin'],
 });
 
 const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
+  variable: '--font-playfair',
+  subsets: ['latin'],
 });
 
 export const metadata = {
-  title: "Attorney at Law | Premium Legal Services",
-  description: "Committed to Excellence in Legal Representation",
+  title: 'Nazmul Samrat | Premium Tax Services',
+  description: 'Committed to Excellence in Legal Representation',
 };
 
 export default function RootLayout({ children }) {
