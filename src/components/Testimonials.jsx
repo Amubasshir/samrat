@@ -30,12 +30,12 @@ export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const next = () => {
-    setCurrentIndex(prev => (prev + 1) % testimonials.length);
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   const prev = () => {
     setCurrentIndex(
-      prev => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
   };
 
@@ -46,7 +46,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative py-32 bgTest overflow-hidden"
+      className="relative py-16 bgTest overflow-hidden"
     >
       <div className="container mx-auto px-6 text-center relative z-20">
         {/* Header */}
@@ -57,7 +57,7 @@ export default function Testimonials() {
           TESTIMONIALS
         </span>
         <h2
-          className="text-5xl md:text-6xl font-serif font-extrabold text-white mb-20 tracking-tight"
+          className="text-4xl md:text-6xl font-serif font-extrabold text-white mb-10 tracking-tight"
           style={{ fontFamily: 'Garamond, Georgia, serif' }}
         >
           What Our <span style={{ color: ACCENT_COLOR_HEX }}>Clients Say</span>

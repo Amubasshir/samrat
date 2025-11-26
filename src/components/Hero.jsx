@@ -58,12 +58,20 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 pb-2">
-            <button className="px-7 py-4 bg-gold text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm">
+            <a
+              href="#contact"
+              className="px-7 py-4 bg-gold text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm cursor-pointer inline-block"
+              aria-label="Scroll to contact section"
+            >
               Contact Us
-            </button>
-            <button className="px-[33px] py-4 border border-gray-600 text-white font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors rounded-sm">
+            </a>
+            <a
+              href="#about"
+              className="px-[33px] py-4 border border-gray-600 text-white font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors rounded-sm cursor-pointer inline-block"
+              aria-label="Scroll to about section"
+            >
               Read More
-            </button>
+            </a>
           </div>
         </motion.div>
 
