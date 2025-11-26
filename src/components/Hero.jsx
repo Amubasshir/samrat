@@ -15,8 +15,15 @@ export default function Hero() {
         aria-hidden="true"
         className="absolute inset-0 z-0"
         style={{
-          background:
-            'repeating-linear-gradient(45deg, #000 0px, #111 2px, #000 4px, #222 6px)',
+          backgroundImage: `
+        radial-gradient(circle at 50% 50%,
+          rgba(245, 158, 11, 0.14) 0%,
+          rgba(245, 158, 11, 0.08) 25%,
+          rgba(245, 158, 11, 0.03) 35%,
+          transparent 50%
+        )
+      `,
+          backgroundSize: '100% 100%',
         }}
       />
 
@@ -24,11 +31,6 @@ export default function Hero() {
       <div
         aria-hidden="true"
         className="absolute inset-0 z-10 pointer-events-none"
-        // style={{
-        //   background: 'rgba(255, 255, 255, 0.02)',
-        //   backdropFilter: 'blur(45px) grayscale(20%)',
-        //   WebkitBackdropFilter: 'blur(45px) grayscale(20%)',
-        // }}
       />
 
       {/* Content: ensure it sits above decorative layers */}
