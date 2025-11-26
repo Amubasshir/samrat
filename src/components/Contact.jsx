@@ -13,14 +13,14 @@ export default function Contact() {
 
   const [submissionStatus, setSubmissionStatus] = useState(''); // '', 'loading', 'success', 'error'
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmissionStatus('loading');
 
@@ -82,14 +82,13 @@ export default function Contact() {
             </h2>
 
             <p className="text-[#C5A059] text-lg mb-8 font-medium">
-              Call us 24/7 at (888)123-4567 or fill out the form.
+              Call us 24/7 or fill out the form.
             </p>
 
             <p className="text-gray-400 leading-relaxed max-w-lg">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less able
-              English.
+              Receive expert advice on tax issues, documentation, and compliance
+              for your business and personal needs, ensuring accurate filing,
+              legal protection, and maximum tax benefits.
             </p>
           </div>
 
