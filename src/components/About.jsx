@@ -23,7 +23,14 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gray-dark relative overflow-hidden">
+    <section
+      id="about"
+      className="py-24 relative overflow-hidden"
+      style={{
+        background:
+          'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000',
+      }}
+    >
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT IMAGE */}
