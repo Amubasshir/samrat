@@ -21,20 +21,26 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/naxmulsamrat"
                 className="text-gray-500 hover:text-gold transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/naxmulsamrat"
                 className="text-gray-500 hover:text-gold transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Twitter size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/naxmulsamrat"
                 className="text-gray-500 hover:text-gold transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Linkedin size={20} />
               </a>
