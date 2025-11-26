@@ -54,9 +54,9 @@ export default function Hero() {
           </h1>
 
           <p className="text-gray-400 text-lg mb-5 md:mb-10  max-w-lg leading-relaxed">
-            With over 20 years of experience, we provide expert legal
-            representation and strategic advice to protect your rights and
-            future.
+            Trusted tax advisory focused on hassle-free compliance, financial
+            protection, and financial solutions for both individuals and growing
+            businesses.
           </p>
 
           <div className="flex flex-wrap gap-4 pb-2">
