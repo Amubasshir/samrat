@@ -113,7 +113,7 @@ const Services = () => {
             className="pt-2 font-header text-2xl text-white sm:text-3xl md:text-4xl xl:pt-5 xl:text-5xl"
             style={{ fontFamily: 'Georgia, serif' }}
           >
-            Let MY Experience Guide You
+            Let My Experience Guide You
           </h2>
         </div>
 
