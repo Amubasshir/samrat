@@ -46,7 +46,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
 
                 <img
-                  src="./images/sam.jpg"
+                  src="./images/nazmul.png"
                   alt="About Lawyer"
                   className="w-full h-full object-cover opacity-80"
                 />
