@@ -52,11 +52,11 @@ export default function About() {
                 />
 
                 <div className="absolute bottom-8 left-8 z-20">
-                  <p className="text-gold font-serif text-2xl italic">
-                    "Justice is truth in action"
+                  <p className="text-gold font-serif text-lg md:text-2xl italic">
+                    &quot;Smart taxation empowers growth&quot;
                   </p>
-                  <p className="text-white mt-2 font-bold">
-                    - Benjamin Disraeli
+                  <p className="text-white mt-2 font-serif font-bold">
+                    - Nazmul Samrat
                   </p>
                 </div>
               </div>
