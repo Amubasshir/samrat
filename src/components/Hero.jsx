@@ -40,8 +40,9 @@ export default function Hero() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="text-center md:text-left mx-auto md:mx-0"
         >
-          <div className="flex items-center gap-4 mb-6 md:hidden">
+          <div className="flex items-center gap-4 mb-6 md:hidden justify-center md:justify-start">
             <div className="h-[2px] w-12 bg-gold"></div>
             <span className="text-gold uppercase tracking-widest text-sm font-semibold">
               Nazmul Samrat
@@ -59,17 +60,17 @@ export default function Hero() {
             businesses.
           </p>
 
-          <div className="flex flex-wrap gap-4 pb-2">
+          <div className="flex flex-wrap gap-4 pb-2 justify-center md:justify-start">
             <a
               href="#contact"
-              className="px-7 py-4 bg-gold text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm cursor-pointer inline-block"
+              className="inline-flex items-center justify-center w-40 py-4 bg-gold text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm cursor-pointer"
               aria-label="Scroll to contact section"
             >
-              Contact Us
+              Contact
             </a>
             <a
               href="#about"
-              className="px-[33px] py-4 border border-gray-600 text-white font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors rounded-sm cursor-pointer inline-block"
+              className="hidden md:inline-flex items-center justify-center w-40 py-4 border border-gray-600 text-white font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors rounded-sm cursor-pointer"
               aria-label="Scroll to about section"
             >
               Read More
