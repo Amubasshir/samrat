@@ -87,7 +87,7 @@ const Services = () => {
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://thompson.redpixelthemes.com/assets/img/unlicensed/bg-cta.jpg"
+          src="./images/cover.jpg"
           alt="Diverse group of people looking down and smiling"
           className="absolute inset-0 w-full h-full object-cover"
         />
