@@ -20,9 +20,9 @@ const testimonials = [
   },
   {
     id: 3,
-    text: 'Professional, knowledgeable, and genuinely compassionate. They expertly navigated the complexities, ensuring my voice was heard and my interests were protected.',
-    author: 'Robert Chen',
-    role: 'Real Estate Portfolio Director',
+    text: 'Highly skilled and genuinely caring. He guided me through difficult tax issues with clarity and protected my interests at every step.',
+    author: 'Farhana Rahman',
+    role: 'Portfolio Manager, Reliance Estates',
   },
 ];
 
