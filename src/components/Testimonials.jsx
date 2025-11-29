@@ -60,7 +60,7 @@ export default function Testimonials() {
           className="text-4xl md:text-6xl font-serif font-extrabold text-white mb-10 tracking-tight"
           style={{ fontFamily: 'Garamond, Georgia, serif' }}
         >
-          What Our <span style={{ color: ACCENT_COLOR_HEX }}>Clients Say</span>
+          What My <span style={{ color: ACCENT_COLOR_HEX }}>Clients Say</span>
         </h2>
 
         {/* Testimonial Container */}
