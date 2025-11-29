@@ -8,8 +8,8 @@ import { useState } from 'react';
 const testimonials = [
   {
     id: 1,
-    text: 'Their strategic approach and dedication to my case were outstanding. I felt supported throughout the entire process, achieving a result that exceeded expectations.',
-    author: 'James Mitchell',
+    text: 'His guidance on my tax filing and compliance was exceptional. I felt fully supported, and the results were far better than expected.',
+    author: 'Tanvir Chowdhury',
     role: 'CEO, Nexus Group',
   },
   {
