@@ -14,9 +14,9 @@ const testimonials = [
   },
   {
     id: 2,
-    text: 'Facing a complex legal battle, the team provided crystal-clear guidance and leveraged their expertise to secure an outcome better than I could have hoped for.',
-    author: 'Sarah Jenkins',
-    role: 'Managing Partner, Zenith Capital',
+    text: 'His clarity, professionalism, and deep tax knowledge helped resolve my issues quickly and effectively. I highly recommend his services to anyone seeking legal counsel.',
+    author: 'Arif Rahman',
+    role: 'Managing Partner, Vertex Group BD',
   },
   {
     id: 3,
