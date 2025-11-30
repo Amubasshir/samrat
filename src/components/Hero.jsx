@@ -51,7 +51,8 @@ export default function Hero() {
 
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">
             Smart Tax <span className="text-gold">Solutions.</span> <br />
-            Strong Legal <span className="text-gold">Protection.</span>
+            For <span className="inline-block mx-0 md:mx-2">A</span> Smarter
+            <span className="text-gold"> Future.</span>
           </h1>
 
           <p className="text-gray-400 text-lg mb-5 md:mb-10  max-w-lg leading-relaxed">
