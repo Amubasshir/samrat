@@ -39,11 +39,11 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           {/* Mobile: logo image */}
           <Image
-            src="/images/logo.png"
+            src="/images/samlogo.jpeg"
             alt="Nazmul Samrat logo"
-            width={40}
-            height={40}
-            className="h-10 w-auto"
+            width={60}
+            height={60}
+            className="h-14 w-auto"
             priority
           />
 
