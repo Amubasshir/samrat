@@ -122,8 +122,8 @@ export default function Footer() {
             <div className="grid grid-cols-1 gap-4 text-sm text-gray-500">
               <div>
                 <p className="text-gold font-semibold">Dhaka Chamber :</p>
-                <p>Ivory Krishnachura (4th floor)</p>
-                <p>3/1-E Purana Paltan, Dhaka-1000</p>
+                <p>131, Wapda Road, Ground Floor</p>
+                <p>Rampura, Dhaka-1219</p>
               </div>
 
               <div>
@@ -132,13 +132,13 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-col gap-2 pt-2">
-                <a
+                {/* <a
                   href="tel:01912871143"
                   className="flex items-center gap-2 hover:text-gold"
                 >
                   <Phone size={16} />
                   <span>01912-871143</span>
-                </a>
+                </a> */}
                 <a
                   href="tel:01715317883"
                   className="flex items-center gap-2 hover:text-gold"
