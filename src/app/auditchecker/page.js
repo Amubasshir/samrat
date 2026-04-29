@@ -247,9 +247,8 @@ export default function AuditCheckerPage() {
           <p className="text-gray-400 text-sm leading-relaxed">
             <strong className="text-orange-400">এই টুল সম্পর্কে:</strong> জাতীয়
             রাজস্ব বোর্ড (NBR) কর্তৃক বছর 2023-24 এ automated Risk-Based Audit
-            Criterion আকারে 72,341টি আয়কর রিটার্ন নির্বাচিত হয়েছে। এই টুলটি
-            ব্রাউজারে আপনার TIN ছাড়া কোনো তথ্য সংরক্ষণ করে না এবং আপনার ডেটা
-            আপনার browser-এ থাকে না।
+            Criterion আকারে 72,341টি আয়কর রিটার্ন নির্বাচিত হয়েছে। এই টুলে
+            আপনার দেওয়া তথ্য কোথাও সংরক্ষণ করা বা কারো সাথে শেয়ার করা হয় না।
           </p>
           <p className="text-gray-500 text-xs mt-2">
             Source: NBR press release, 28 April 2026.
