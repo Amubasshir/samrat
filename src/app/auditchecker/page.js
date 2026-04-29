@@ -133,7 +133,7 @@ export default function AuditCheckerPage() {
               চেক করুন
             </button>
           </div>
-          {error && <p className="text-red-400 text-sm mt-2">{error}</p>}
+          {error && <p className="text-red-400 text-xs sm:text-sm mt-2">{error}</p>}
           {dataError && (
             <p className="text-red-400 text-sm mt-2">
               Failed to load audit data. Please refresh the page.
