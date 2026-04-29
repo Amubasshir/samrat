@@ -54,7 +54,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -64,6 +64,17 @@ export default function Header() {
               {link.name}
             </Link>
           ))}
+          <a
+            href="/auditchecker"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative bg-gold text-black font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-sm hover:bg-gold-light transition-colors animate-pulse"
+          >
+            Verify Audit
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full leading-none">
+              NEW
+            </span>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -95,6 +106,18 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
+              <a
+                href="/auditchecker"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative inline-flex items-center justify-center bg-gold text-black font-bold text-sm uppercase tracking-widest px-4 py-3 rounded-sm hover:bg-gold-light transition-colors mt-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Verify Audit
+                <span className="absolute -top-1.5 right-2 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full leading-none">
+                  NEW
+                </span>
+              </a>
             </nav>
           </motion.div>
         )}
