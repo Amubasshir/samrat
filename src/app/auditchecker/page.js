@@ -123,7 +123,7 @@ export default function AuditCheckerPage() {
             <button
               onClick={handleCheck}
               disabled={dataLoading}
-              className="bg-[#d4af37] text-black cursor-pointer font-bold px-6 py-3 rounded-md hover:bg-gold-light transition-colors uppercase tracking-wider text-sm flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-[#E8C84A] text-black cursor-pointer font-bold px-6 py-3 rounded-md hover:bg-gold-light transition-colors uppercase tracking-wider text-sm flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {dataLoading ? (
                 <Loader2 size={18} className="animate-spin" />

@@ -64,7 +64,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 pb-2 justify-center md:justify-start">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center w-40 py-4 bg-gold text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm cursor-pointer"
+              className="inline-flex items-center justify-center w-40 py-4 bg-[#E8C84A] text-black font-bold uppercase tracking-wider hover:bg-gold-light transition-colors rounded-sm cursor-pointer"
               aria-label="Scroll to contact section"
             >
               Contact
