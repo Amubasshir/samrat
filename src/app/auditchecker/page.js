@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { track } from '@vercel/analytics';
 
 function maskTin(tin) {
   if (tin.length !== 12) return tin;
@@ -57,7 +58,11 @@ export default function AuditCheckerPage() {
       return;
     }
 
-    setResult(tinSetRef.current.has(tin) ? 'selected' : 'not-selected');
+    track('TIN Check', { action: 'check_clicked' });
+
+    const isSelected = tinSetRef.current.has(tin);
+    setResult(isSelected ? 'selected' : 'not-selected');
+    track('TIN Result', { result: isSelected ? 'selected' : 'not_selected' });
   };
 
   const handleKeyDown = (e) => {
@@ -207,6 +212,7 @@ export default function AuditCheckerPage() {
                 <div className="border-t border-white/10 pt-4 space-y-3">
                   <Link
                     href="/#contact"
+                    onClick={() => track('Contact Click', { source: 'audit_checker' })}
                     className="block w-full bg-[#d4af37] text-black font-bold text-center px-6 py-4 rounded-md hover:bg-gold-light transition-colors uppercase tracking-wider text-sm"
                   >
                     Nazmul Samrat-এর সাথে যোগাযোগ করুন
