@@ -133,7 +133,9 @@ export default function AuditCheckerPage() {
               চেক করুন
             </button>
           </div>
-          {error && <p className="text-red-400 text-xs sm:text-sm mt-2">{error}</p>}
+          {error && (
+            <p className="text-red-400 text-xs sm:text-sm mt-2">{error}</p>
+          )}
           {dataError && (
             <p className="text-red-400 text-sm mt-2">
               Failed to load audit data. Please refresh the page.
@@ -145,13 +147,16 @@ export default function AuditCheckerPage() {
         {result === 'not-selected' && (
           <div className="bg-green-900/20 border border-green-800/40 rounded-lg p-4 sm:p-6 mb-8">
             <div className="flex flex-col sm:flex-row items-start gap-4">
-              <CheckCircle size={36} className="text-green-400 shrink-0 sm:mt-1" />
+              <CheckCircle
+                size={36}
+                className="text-green-400 shrink-0 sm:mt-1"
+              />
               <div className="flex-1">
                 <h2 className="text-xl sm:text-2xl font-serif text-green-400 mb-1">
                   Audit-এ নেই
                 </h2>
                 <p className="text-gray-400 text-sm mb-4">
-                  TIN {maskTin(tinInput)} — AY 2023-24 NBR audit তালিকায় নেই।
+                  TIN {maskTin(tinInput)} 2023-24 NBR audit তালিকায় নেই।
                 </p>
                 <div className="flex flex-wrap gap-2 sm:gap-3">
                   <span className="bg-white/5 border border-white/10 rounded px-3 py-1.5 text-xs text-gray-300">
@@ -173,13 +178,16 @@ export default function AuditCheckerPage() {
         {result === 'selected' && (
           <div className="bg-red-900/20 border border-red-800/40 rounded-lg p-4 sm:p-6 mb-8">
             <div className="flex flex-col sm:flex-row items-start gap-4">
-              <AlertTriangle size={36} className="text-red-400 shrink-0 sm:mt-1" />
+              <AlertTriangle
+                size={36}
+                className="text-red-400 shrink-0 sm:mt-1"
+              />
               <div className="flex-1">
                 <h2 className="text-xl sm:text-2xl font-serif text-red-400 mb-1">
                   Audit-এ আছেন!
                 </h2>
                 <p className="text-gray-400 text-sm mb-4">
-                  আপনার TIN AY 2023-24 NBR audit তালিকায় রয়েছে। আইনি পরামর্শ
+                  আপনার TIN 2023-24 NBR audit তালিকায় রয়েছে। আইনি পরামর্শ
                   নেওয়া জরুরি।
                 </p>
                 <div className="flex flex-wrap gap-2 sm:gap-3 mb-6">
@@ -236,7 +244,9 @@ export default function AuditCheckerPage() {
               key={stat.label}
               className="bg-white/5 border border-white/10 rounded-lg p-3 sm:p-4 text-center"
             >
-              <div className="text-lg sm:text-xl font-bold text-gold">{stat.value}</div>
+              <div className="text-lg sm:text-xl font-bold text-gold">
+                {stat.value}
+              </div>
               <div className="text-xs text-gray-500 mt-1">{stat.label}</div>
             </div>
           ))}
