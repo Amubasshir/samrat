@@ -156,7 +156,7 @@ export default function AuditCheckerPage() {
                   Audit-এ নেই
                 </h2>
                 <p className="text-gray-400 text-sm mb-4">
-                  TIN {maskTin(tinInput)} 2023-24 NBR audit তালিকায় নেই।
+                  TIN {maskTin(tinInput)} NBR audit 2023-24 তালিকায় নেই।
                 </p>
                 <div className="flex flex-wrap gap-2 sm:gap-3">
                   <span className="bg-white/5 border border-white/10 rounded px-3 py-1.5 text-xs text-gray-300">
