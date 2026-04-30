@@ -123,7 +123,7 @@ export default function AuditCheckerPage() {
               onKeyDown={handleKeyDown}
               placeholder="Your 12-digit TIN number"
               disabled={dataLoading}
-              className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-3 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-gold transition-colors font-mono tracking-wider text-lg disabled:opacity-50"
+              className="w-full bg-white/5 border border-white/10 rounded-md px-3 py-3 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-gold transition-colors font-mono tracking-widest text-sm sm:text-lg disabled:opacity-50"
             />
             <button
               onClick={handleCheck}
