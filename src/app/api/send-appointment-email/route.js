@@ -2,7 +2,7 @@
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const RECIPIENT_EMAIL = 'wedigitalmonk@gmail.com';
+const RECIPIENT_EMAIL = 'n.tax.bd@gmail.com';
 
 export async function POST(request) {
   try {
@@ -35,7 +35,7 @@ export async function POST(request) {
         success: false,
         error: error.message || 'Failed to send email',
       }),
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
